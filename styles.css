@@ -80,7 +80,7 @@ section1-h1{
 }
 
 .p-1, .p-2{
-   font-size: 17px;
+   font-size: 20px;
 }
 
 /* SECTION 3 */
@@ -88,17 +88,18 @@ section1-h1{
 .section3{
     width: 1349px;
     height: 570px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
     text-align: center;
     justify-content: space-between;
-    padding: 60px 60px;
-    border: 1px solid red;
+    padding: 60px 235px;
+    background-color: #333;
 }
 
 .section3img{
-    width: 840px;
-    height: 467px;  
-    border: 1px solid  greenyellow;
+    width: 240px;
+    height: 127px;  
 }
 
 .sec3img{
@@ -108,10 +109,17 @@ section1-h1{
 
 .section3text{
     width: 272px;
-    height: 318px;
+    height: 288px;
     display: block;
     margin: 0 auto;
-    
+    background-color: #fff;
+    position: relative;
+    top: -5px;
+}
+
+.sec3h3, .sec3p{
+    position: relative;
+    top: 29px; 
 }
 
 
@@ -124,5 +132,6 @@ section1-h1{
 .sec3p{
     display: block;
     font-size: 17px;
-    padding: 17px 0;
+    padding: 17.6px 0;
+    line-height: 1.5;
 }
